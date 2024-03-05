@@ -1,3 +1,9 @@
+![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/71c48ff5-a4c3-4433-b126-b0f1d3e81535)
+
+
+
+
+
 # ExegolSpector : Automatisation DevSecOps pour Tests d'Intrusion
 
 Introduction
