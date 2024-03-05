@@ -6,7 +6,7 @@ import json
 import xmltodict
 
 # Configuration GitHub (utilisée pour récupérer la cheatsheet, si nécessaire)
-GITHUB_TOKEN = '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'
+GITHUB_TOKEN = ''
 REPO_NAME = 'Erwan923/ExegolSpector'
 FILE_PATH = 'Nmap.md'
 
