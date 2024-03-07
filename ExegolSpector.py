@@ -4,6 +4,8 @@ import yaml
 import os
 import json
 import xmltodict
+import requests
+import base64
 
 # Configuration GitHub (utilisée pour récupérer la cheatsheet, si nécessaire)
 GITHUB_TOKEN = ''
@@ -43,15 +45,54 @@ def convert_xml_to_json(xml_file_path):
     else:
         print("Nmap did not generate an XML report.")
 
+def get_markdown_from_github(repo_name, file_path, github_token):
+    headers = {'Authorization': f'token {github_token}'}
+    api_url = f"https://api.github.com/repos/{repo_name}/contents/{file_path}"
+    response = requests.get(api_url, headers=headers)
+    if response.status_code == 200:
+        file_content_base64 = response.json()['content']
+        markdown_content = base64.b64decode(file_content_base64).decode('utf-8')
+        return markdown_content
+    else:
+        print(f"Failed to fetch file from GitHub. Status Code: {response.status_code}")
+        return None
+
+def parse_markdown_for_commands(markdown_content, scan_type):
+    scan_sections = {
+        'basic': '### Basic Scanning Techniques',
+        'discovery': '### Discovery Options',
+        'advanced': '### Advanced Scanning Options',
+        'port': '### Port Scanning Options',
+        'version': '### Version Detection',
+        'aggressive': '### Firewall Evasion Techniques'
+    }
+    commands = []
+    section = scan_sections.get(scan_type, '')
+    if section:
+        section_started = False
+        for line in markdown_content.split('\n'):
+            if section in line:
+                section_started = True
+            elif section_started and line.startswith('### '):
+                break  # End of the relevant section
+            elif section_started and line.strip().startswith('* `nmap'):
+                command = line.split('`')[1]
+                commands.append(command)
+    return commands
+
 def main():
     args = parse_args()
-    
-    # Example commands for illustration; this should be dynamically generated based on the scan type
-    commands = ["nmap -sV", "nmap -A"]  # Placeholder for actual command selection logic
-
-    playbook_path, report_filename = generate_ansible_playbook(commands, args.targets)
-    execute_ansible_playbook(playbook_path)
-    convert_xml_to_json(report_filename)
+    markdown_content = get_markdown_from_github(REPO_NAME, FILE_PATH, GITHUB_TOKEN)
+    if markdown_content:
+        commands = parse_markdown_for_commands(markdown_content, args.type)
+        if commands:
+            playbook_path, report_filename = generate_ansible_playbook(commands, args.targets)
+            execute_ansible_playbook(playbook_path)
+            convert_xml_to_json(report_filename)
+        else:
+            print("No commands found for the specified scan type.")
+    else:
+        print("Failed to retrieve or parse the markdown content from GitHub.")
 
 if __name__ == '__main__':
     main()
