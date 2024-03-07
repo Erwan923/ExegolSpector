@@ -1,4 +1,5 @@
-![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/71c48ff5-a4c3-4433-b126-b0f1d3e81535)
+
+![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/43bdb0b6-50ea-4e85-85fe-b5d2fc8f3a51)
 
 
 
