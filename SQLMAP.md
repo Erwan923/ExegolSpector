@@ -1,8 +1,8 @@
-#!/bin/bash
 
-echo "## SQLMap Cheat Sheet pour Console"
 
-echo -e "\n### Commandes Automatiques"
+"## SQLMap Cheat Sheet pour Console"
+
+ "\n### Commandes Automatiques"
 
 echo -e "\n#### Scanner une URL de manière automatique"
 echo "sqlmap -u \"http://siteatester.fr\""
