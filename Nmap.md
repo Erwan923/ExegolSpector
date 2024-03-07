@@ -74,13 +74,13 @@
 * TCP ACK scan
 	* `nmap -sA [target]`
 * Custom TCP scan
-	* `nmap –scanflags [flags] [target]`
+	* `nmap --scanflags [flags] [target]`
 * IP protocol scan
 	* `nmap -sO [target]`
 * Send Raw Ethernet packets
-	* `nmap –send-eth [target]`
+	* `nmap --send-eth [target]`
 * Send IP packets
-	* `nmap –send-ip [target]`
+	* `nmap --send-ip [target]`
 
 ### Port Scanning Options
 * Perform a fast scan
