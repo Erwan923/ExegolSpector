@@ -96,3 +96,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+# À la fin de la fonction main() dans ExegolSpector.py
+if __name__ == '__main__':
+    main()
+    # Automatisation du lancement de attack_launcher.py
+    subprocess.run(['python3', 'attack_launcher.py'], check=True)
