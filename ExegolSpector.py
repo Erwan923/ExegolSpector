@@ -94,10 +94,9 @@ def main():
     else:
         print("Failed to retrieve or parse the markdown content from GitHub.")
 
-if __name__ == '__main__':
-    main()
-# À la fin de la fonction main() dans ExegolSpector.py
-if __name__ == '__main__':
-    main()
-    # Automatisation du lancement de attack_launcher.py
+    # Automatisation du lancement de attack_launcher.py après le travail principal
+    print("Launching attack orchestrator...")
     subprocess.run(['python3', 'attack_launcher.py'], check=True)
+
+if __name__ == '__main__':
+    main()
