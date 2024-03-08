@@ -5,8 +5,6 @@
 	* `nmap [target]`
 * Scan multiple targets
 	* `nmap [target1,target2,etc]`
-* Scan a list of targets
-	* `nmap -iL [list.txt]`
 * Scan a range of hosts
 	* `nmap [range of IP addresses]
 * Scan an entire subnet	
