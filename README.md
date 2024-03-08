@@ -32,6 +32,7 @@ Pour commencer à utiliser ExegolSpector  :
 Après chaque scan, ExegolSpector effectue deux actions principales :
 
 1.Génération de Rapport JSON : Un rapport détaillant les résultats du scan est créé en format JSON, incluant les vulnérabilités détectées.
+
 2.Lancement Automatique des Scripts d'Attaque : Sur la base des vulnérabilités identifiées, des scripts d'attaque spécifiques sont exécutés automatiquement pour tester ces failles.
 
 ## Installation avec Docker
