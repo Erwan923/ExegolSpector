@@ -26,12 +26,8 @@ Pour simplifier le déploiement et l'utilisation d'ExegolSpector, vous pouvez le
 Tout d'abord, construisez l'image Docker à partir du Dockerfile présent dans votre répertoire. Assurez-vous d'être dans le répertoire contenant le Dockerfile d'ExegolSpector, puis exécutez :
 
 ```bash
-docker build -t exegolspector_custom  .
-
-Une fois l'image construite :
-docker run -it exegolspector_custom  .
-
-
+docker build -t exegolspector_custom
+docker run -it exegolspector_custom
 
 
 
