@@ -50,5 +50,8 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
    ```bash
    docker-compose exec exegolspector bash
 
+## Licence
+
+Ce projet est sous licence Apache 2.0 - voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
    
