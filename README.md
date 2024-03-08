@@ -50,6 +50,10 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
    ```bash
    docker-compose exec exegolspector bash
 
+## Tableau de suivi en temps réel
+
+1. GUI web avec différents dashboard permettant d'avoir une meilleur visualisation des rapports de scan 
+ 
 ## Licence
 
 Ce projet est sous licence Apache 2.0 - voir le fichier [LICENSE](LICENSE) pour plus de détails.
