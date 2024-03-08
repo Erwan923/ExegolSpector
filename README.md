@@ -16,6 +16,21 @@ ExegolSpector facilite la réalisation de scans de réseaux sur plusierus cibles
  . git clone https://github.com/VotreUsername/ExegolSpector.git
  . cd ExegolSpector
  . sudo python3 ExegolSpector4.py --type advanced --targets IP
+ 
+## Installation avec Docker
+
+Pour simplifier le déploiement et l'utilisation d'ExegolSpector, vous pouvez le lancer dans un conteneur Docker. Voici comment procéder :
+
+### Construire l'image Docker
+
+Tout d'abord, construisez l'image Docker à partir du Dockerfile présent dans votre répertoire. Assurez-vous d'être dans le répertoire contenant le Dockerfile d'ExegolSpector, puis exécutez :
+
+```bash
+docker build -t exegolspector_custom  .
+
+Une fois l'image construite :
+docker run -it exegolspector_custom  .
+
 
 
 
