@@ -20,6 +20,6 @@ Pour commencer à utiliser ExegolSpector  :
    ```bash
     cd ExegolSpector
 3. Choix du type de scan
-  ```bash
+    ```bash
      sudo python3 ExegolSpector.py --type [basic', 'discovery', 'advanced', 'port', 'version', 'aggressive ] --targets [IP]
 
