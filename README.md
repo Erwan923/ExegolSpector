@@ -35,6 +35,8 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
 
 2.Lancement Automatique des Scripts d'Attaque : Sur la base des vulnérabilités identifiées, des scripts d'attaque spécifiques sont exécutés automatiquement pour tester ces failles.
 
+3.Génération de rapport de penstest en json ou en formrat texte avec l'impplémentation de l' IA si choisi. 
+
 ## Installation avec Docker
 
 1. Construire l'image Docker
