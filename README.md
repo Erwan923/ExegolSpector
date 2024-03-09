@@ -68,7 +68,7 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
 
 ## Tableau de suivi en temps réel
 
-1. GUI web avec différents dashboard permettant d'avoir une meilleur visualisation des rapports de scan
+1. Monitoring avec différents dashboard
 
 
 ## Interface graphique
