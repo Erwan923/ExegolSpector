@@ -71,7 +71,7 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
 1. Monitoring avec différents dashboard
 
 
-## Interface graphique
+## wiki
 
 ## Implémentation AI 
 
