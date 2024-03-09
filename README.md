@@ -8,7 +8,10 @@
 
 ExegolSpector est une boite à outils de pentest conçue pour automatiser les tests d'intrusion et s'intégrer de manière fluide à divers OS de pentest, notamment le contenaire Exegol pour une installation rapide et ses différents outils. [Plus d'informations sur Exegol.]https://exegol.readthedocs.io/en/latest/exegol-image/tools.html
 
-Grâce à plusieurs scripts Python, de génération de playbook Ansible, et à une intégration poussée avec GitHub, ExegolSpector peut être utile pour les débutants en cyber, les participants de CTF, et les étudiants en cybersécurité.
+Le script Python ExegolSpector.py utilise la fonction de parsing afin de lire les différentes cheetsheet au format markdown et génère un playbook Ansible en fonction du type de scan choisi puisénère un résulat au format JSON. 
+
+le script attack_orchestrtor.py lis ce JSON puis  en fonction de ports ouverts après ce scan cherche les CVE dans la base de donnée de OWASPet lance les script correspondant grace au module subprocess. 
+
 
 ExegolSpector facilite la réalisation de scans de réseaux sur plusieurs cibles, la génération dynamique de playbooks Ansible et l'exploitation de vulnérabilités de manière efficace et automatisée.
 
