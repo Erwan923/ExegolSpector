@@ -29,7 +29,17 @@ Pour commencer à utiliser ExegolSpector  :
 3. Choix du type de scan
     ```bash
      sudo python3 ExegolSpector.py --type [basic', 'discovery', 'advanced', 'port', 'version', 'aggressive ] --targets [IP]
-    
+
+4. Lancement du Playbook Ansible intégrant les commandes nmap pour le type de scan advanced : 
+
+![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/f863241c-18e3-4347-b433-06a8e2b9fad5)
+
+5. Génération du rapport en format JSON :
+   
+7. Lancement automatique du script orchestrateur recherchant les CVE ainsi que le trype de script correspondant :
+   
+   
+
 ## Fonction Automatisée de Rapport et d'Attaque
 
 Après chaque scan, ExegolSpector effectue deux actions principales :
