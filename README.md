@@ -56,6 +56,13 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
 
 
 ## Interface graphique
+
+## Implémentation AI 
+
+1. Une impkémentation de l' IA au projet est possible en démarrant le projet avec la commande ci dessus : 
+
+
+2. Des rapport de pentsest automatquement généré peuvent etre retroouvé égaemment en effectuant cette commande : 
  
 ## Licence
 
