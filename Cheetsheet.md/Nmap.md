@@ -5,23 +5,7 @@
         * `nmap -A [target]`
 * Scan with scripts nad version detection
         * `nmap -sC -sV [target]`
-* Scan multiple targets
-	* `nmap [target1,target2,etc]`
-* Scan a range of hosts
-	* `nmap [range of IP addresses]`
-* Scan an entire subnet	
-	* `nmap [IP address/cdir]`
-* Scan random hosts 
-	* `nmap -iR [number]`
-* Excluding targets from a scan	
-	* `nmap [targets] –exclude [targets]`
-* Excluding targets using a list
-	* `nmap [targets] –excludefile [list.txt]`
-* Perform an aggressive scan
-	* `nmap -A [target]`
-* Scan an IPv6 target
-	* `nmap -6 [target]`
-
+  
 ### Discovery Options
 * Perform a ping scan only
 	* `nmap -sP [target]`
