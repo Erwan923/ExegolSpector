@@ -28,7 +28,7 @@ Pour commencer à utiliser ExegolSpector  :
    ```bash
     cd ExegolSpector
 
-3. Définir le token Github
+3. Définir le token Github dans le script ExegolSpector.py
 
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/6b2e8c8f-bfec-4f3e-914e-1785d214dc70)
    
