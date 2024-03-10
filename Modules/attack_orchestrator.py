@@ -6,7 +6,7 @@ attacks = {
     80: "python3 Modules/fuzzing.py",
     443: "python3 Modules/web_extract.py",
     21: "python3 Modules/ftplib.py",
-    445: "./Modules/SMBPortAttack.sh
+    445: "./Modules/SMBPortAttack.sh"
 }
 
 def execute_attack(script, target_ip):
