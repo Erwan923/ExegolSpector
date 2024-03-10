@@ -11,10 +11,10 @@ Une image custom avec un Dockerfile pour le contenaire Exegol à été crée dan
 
 Le script Python ExegolSpector.py utilise la fonction de parsing afin de lire les différentes cheetsheet au format markdown et génère un playbook Ansible en fonction du type de scan choisi puis génère un rapport au format JSON contenant les résultat du scnan nmap. 
 
-le script attack_orchestrtor.py lis ce JSON puis  en fonction de ports ouverts après ce scan cherche les CVE dans la base de donnée de OWASPet lance les script correspondant grace au module subprocess. 
+le script attack_orchestrtor.py lis ce JSON puis  en fonction de ports ouverts après ce scan lance les script correspondant. Le script cve_serach.py se charge de rechercher des CVE en lisant le rapport égalemment.   
 
 
-ExegolSpector facilite la réalisation de scans de réseaux sur plusieurs cibles, la génération dynamique de playbooks Ansible et l'exploitation de vulnérabilités de manière efficace et automatisée.
+ExegolSpector facilite la réalisation de scans de réseaux sur plusieurs cibles, la génération dynamique de playbooks Ansible, le recherche et l'exploitation de vulnérabilités de manière efficace et automatisée.
 
 ## Démarrage Rapide
 
