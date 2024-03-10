@@ -30,7 +30,8 @@ Pour commencer à utiliser ExegolSpector  :
 
 3. Définir le token Github dans le script ExegolSpector.py
 
-   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/6b2e8c8f-bfec-4f3e-914e-1785d214dc70)
+![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/c7005740-36a0-4680-baed-6a0c949a94ee)
+
    
 4. Choix du type de scan
     ```bash
