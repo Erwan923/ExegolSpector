@@ -24,15 +24,15 @@ Pour commencer à utiliser ExegolSpector  :
    ```bash
    git clone https://github.com/VotreUsername/ExegolSpector.git
 
-2. Définir le token Github
-
-   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/6b2e8c8f-bfec-4f3e-914e-1785d214dc70)
-
-
-4. Accédez au répertoire du projet
+2. Accédez au répertoire du projet
    ```bash
     cd ExegolSpector
-5. Choix du type de scan
+
+3. Définir le token Github
+
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/6b2e8c8f-bfec-4f3e-914e-1785d214dc70)
+   
+4. Choix du type de scan
     ```bash
      sudo python3 ExegolSpector.py --type [basic', 'discovery', 'advanced', 'port', 'version', 'aggressive ] --targets [IP]
 
