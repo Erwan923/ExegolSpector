@@ -1,12 +1,14 @@
 ## Nmap Cheat Sheet
 
 ### Basic Scanning Techniques
-* Scan a single target
-	* `nmap [target]`
+* Scan Agressif
+        * `nmap -A [target]`
+* Scan with scripts nad version detection
+        * `nmap -sC -sV [target]`
 * Scan multiple targets
 	* `nmap [target1,target2,etc]`
 * Scan a range of hosts
-	* `nmap [range of IP addresses]
+	* `nmap [range of IP addresses]`
 * Scan an entire subnet	
 	* `nmap [IP address/cdir]`
 * Scan random hosts 
