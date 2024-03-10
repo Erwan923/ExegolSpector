@@ -22,7 +22,7 @@ import xmltodict
 import requests
 import base64
 
-# Configuration GitHub (utilisée pour récupérer la cheatsheet, si nécessaire)
+# Configuration GitHub et définition des variables ( pour récupérer la cheatsheet)
 GITHUB_TOKEN = ''
 REPO_NAME = 'Erwan923/ExegolSpector'
 FILE_PATH = './Cheetsheet.md/Nmap.md'
