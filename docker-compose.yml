@@ -1,0 +1,14 @@
+version: '3'
+services:
+  exegolspector:
+    image: exegolspector_custom
+    build: .
+    volumes:
+      - ./data:/data # Assurez-vous de configurer ce volume selon vos besoins
+    networks:
+      - pentest_network
+
+networks:
+  pentest_network:
+    driver: bridge
+
