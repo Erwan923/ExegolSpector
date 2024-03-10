@@ -32,9 +32,13 @@ Pour commencer à utiliser ExegolSpector  :
 
     ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/4218c581-91c7-49c6-8089-a1394d0b95f1)
 
+4. Exemple sur la box Archetype de Hack the box :
+
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/f3836208-ec4b-4dd3-a234-56d30d113db5)
+
 
    
-4. Choix du type de scan
+6. Choix du type de scan
     ```bash
      sudo python3 ExegolSpector.py --type [basic', 'discovery', 'advanced', 'port', 'version', 'aggressive ] --targets [IP]
 
