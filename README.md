@@ -46,7 +46,7 @@ Pour commencer à utiliser ExegolSpector  :
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/bd8c95d1-b7ae-4602-b41d-77a0b9bc8de3)
 
 
-3. Génération du rapport en format JSON :
+3. Rapport nmap_report.json :
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/66e3200f-0877-4f92-b1ac-f300f10bd584)
    
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/72a4f20b-7d71-4c9f-a5cf-ca9542742ff6)
