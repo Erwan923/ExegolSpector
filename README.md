@@ -63,7 +63,8 @@ Pour commencer à utiliser ExegolSpector  :
    
 5. Lancement automatique du script orchestrateur lançant les scripts correspondant au rapport nmap après lecture automatique :
 
-   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/7b1c4088-80e8-4c91-b833-01339f658dbf)
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/08dd58a0-be83-4c34-b1de-6e5b84eb0b7d)
+
 
 
 
