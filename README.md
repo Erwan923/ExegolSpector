@@ -48,7 +48,8 @@ Pour commencer à utiliser ExegolSpector  :
 
 3. Rapport nmap_report.json et port ouverts :
 
-   ![Uploading image.png…]()
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/87ba7acf-79df-4781-b905-31463e952b13)
+
 
 
 
