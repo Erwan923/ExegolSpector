@@ -68,9 +68,9 @@ Pour commencer à utiliser ExegolSpector  :
 
 
 
- 7. Exécution du script smb_scan.sh
+ 7. Résultat du script smb_scan.sh et connexion au serveur SMB
 
-    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/3821974e-93a1-444c-8e06-22a88cea3892)
+    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/122354a3-4519-4132-9ab2-7896f63553f5)
 
    
 
