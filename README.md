@@ -51,6 +51,7 @@ Pour commencer à utiliser ExegolSpector  :
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/72a4f20b-7d71-4c9f-a5cf-ca9542742ff6)
 
    ports ouverts :
+   
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/46d8e073-7c80-493b-b08d-66bdcafaa16a)
 
 
@@ -58,6 +59,21 @@ Pour commencer à utiliser ExegolSpector  :
 
    
 5. Lancement automatique du script orchestrateur lançant les scripts correspondant au rapport nmap :
+
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/422ee5f4-7f20-43a7-b88e-57a532dc78a2)
+
+
+
+ 7. Exécution du script SMB
+
+    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/3821974e-93a1-444c-8e06-22a88cea3892)
+
+   
+
+ 8. Récupération des identifants
+
+    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/2d7dd741-98c3-4da7-9514-3d17448de6d6)
+
    
    
 
