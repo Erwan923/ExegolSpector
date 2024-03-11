@@ -72,7 +72,7 @@ Pour commencer à utiliser ExegolSpector  :
 
    
 
- 8. Récupération des identifants dans le ficher prd.DstConfig
+ 8. Récupération des identifants dans le ficher prod.dtsConfig
 
     ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/2d7dd741-98c3-4da7-9514-3d17448de6d6)
 
