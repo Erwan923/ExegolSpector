@@ -76,7 +76,8 @@ Pour commencer à utiliser ExegolSpector  :
 
     ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/2d7dd741-98c3-4da7-9514-3d17448de6d6)
 
-   
+ En examinant le contenu de ce fichier de configuration, nous repérons en clair le mot de passe de l'utilisateur sql_svc ,
+ qui est M3g4c0rp123 , pour l'hôte ARCHETYPE . 
    
 
 ## Fonction Automatisée de Rapport et d'Attaque
