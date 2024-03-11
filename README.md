@@ -43,7 +43,7 @@ Pour commencer à utiliser ExegolSpector  :
 
 2. Génération via les fichiers .md et lancement du Playbook Ansible intégrant les commandes nmap pour le type de scan basic (ou advanced au choix) : 
 
-   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/bd8c95d1-b7ae-4602-b41d-77a0b9bc8de3)
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/0fda5db0-ff98-4752-854f-890a2c07cf7e)
 
 
 3. Rapport nmap_report.json :
