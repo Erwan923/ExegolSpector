@@ -32,7 +32,7 @@ Pour commencer à utiliser ExegolSpector  :
 
     ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/4218c581-91c7-49c6-8089-a1394d0b95f1)
 
-## Démonstration sur la box Archetype de Hack the box
+## Démonstration sur la box Archetype de Hack the box en une seul commande
 
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/f3836208-ec4b-4dd3-a234-56d30d113db5)
    
@@ -59,7 +59,7 @@ Pour commencer à utiliser ExegolSpector  :
    
 
    
-5. Lancement automatique du script orchestrateur lançant les scripts correspondant au rapport nmap :
+5. Lancement automatique du script orchestrateur lançant les scripts correspondant au rapport nmap après lecture automatique :
 
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/7b1c4088-80e8-4c91-b833-01339f658dbf)
 
