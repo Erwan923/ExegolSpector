@@ -46,14 +46,11 @@ Pour commencer à utiliser ExegolSpector  :
    ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/0fda5db0-ff98-4752-854f-890a2c07cf7e)
 
 
-3. Rapport nmap_report.json :
-   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/66e3200f-0877-4f92-b1ac-f300f10bd584)
+3. Rapport nmap_report.json et port ouverts :
    
-   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/72a4f20b-7d71-4c9f-a5cf-ca9542742ff6)
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/a57407b9-bc65-4256-a3cf-ed130130add1)
 
-   ports ouverts :
    
-   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/46d8e073-7c80-493b-b08d-66bdcafaa16a)
 
 
    
