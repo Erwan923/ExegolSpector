@@ -93,6 +93,11 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
 
 3.Génération de rapport de penstest en json ou en formrat texte avec l'impplémentation de l' IA si choisi. 
 
+## Architecture
+
+![Architecture](https://github.com/Erwan923/ExegolSpector/assets/82095453/145da99a-a765-49e4-86da-36c539a0801e)
+
+
 ## Installation avec Docker
 
 1. Construire l'image Docker
