@@ -39,7 +39,7 @@ Pour commencer à utiliser ExegolSpector  :
    
 1. Choix du type de scan
     ```bash
-     sudo python3 ExegolSpector.py --type [basic', 'discovery', 'advanced', 'port', 'version', 'aggressive ] --targets [IP]
+     sudo python3 ExegolSpector.py --type ['basic','advanced' ] --targets [IP]
 
 2. Génération via les fichiers .md et lancement du Playbook Ansible intégrant les commandes nmap pour le type de scan basic (ou advanced au choix) : 
 
