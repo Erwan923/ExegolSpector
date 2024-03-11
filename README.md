@@ -45,10 +45,19 @@ Pour commencer à utiliser ExegolSpector  :
 
 ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/f863241c-18e3-4347-b433-06a8e2b9fad5)
 
-5. Génération du rapport en format JSON :
+3. Génération du rapport en format JSON :
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/66e3200f-0877-4f92-b1ac-f300f10bd584)
    
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/72a4f20b-7d71-4c9f-a5cf-ca9542742ff6)
+
+   ports ouverts :
+   ![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/46d8e073-7c80-493b-b08d-66bdcafaa16a)
+
+
    
-7. Lancement automatique du script orchestrateur lançant les scripts correspondant au rapport nmap :
+
+   
+5. Lancement automatique du script orchestrateur lançant les scripts correspondant au rapport nmap :
    
    
 
