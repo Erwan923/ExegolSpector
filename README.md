@@ -115,17 +115,16 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
 
 ## Tableau de suivi en temps réel
 
-1. Monitoring avec différents dashboard
+1. En cours (Monitoring avec différents dashboard)
 
 
 ## wiki
 
+1. Site en cours de construction 
+
 ## Implémentation AI 
 
-1. Une implémentation de l' IA au projet est possible (testé avec l' API gpt ou avec Mistral en local) en démarrant le projet avec la commande ci dessus : 
-
-
-2. Des rapport de pentsest automatquement généré peuvent etre retroouvé égaemment en effectuant cette commande : 
+1. fine tunning du modele Mistral 7b pour des rapport de pentsest automatquement généré.
  
 ## Licence
 
