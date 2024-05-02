@@ -1,5 +1,6 @@
 
-![Capture d'écran 2024-03-07 041156](https://github.com/Erwan923/ExegolSpector/assets/82095453/65603ace-5433-4188-9b59-1f9314504b56)
+![Capture d'écran 2024-03-07 041156]![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/ac1a08ff-5cb0-443f-9c78-0fea204fa256)
+
 
 
 ## ExegolSpector: Automatisation pour Tests d'Intrusion
