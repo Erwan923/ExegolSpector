@@ -1,5 +1,4 @@
-
-[image](https://github.com/Erwan923/ExegolSpector/assets/82095453/ac1a08ff-5cb0-443f-9c78-0fea204fa256)
+![Logo du projet](https://github.com/Erwan923/ExegolSpector/assets/82095453/ac1a08ff-5cb0-443f-9c78-0fea204fa256){:height="100px" width="100px"}
 
 
 
