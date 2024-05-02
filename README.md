@@ -1,5 +1,5 @@
 
-![Capture d'écran 2024-03-07 041156]![image](https://github.com/Erwan923/ExegolSpector/assets/82095453/ac1a08ff-5cb0-443f-9c78-0fea204fa256)
+[image](https://github.com/Erwan923/ExegolSpector/assets/82095453/ac1a08ff-5cb0-443f-9c78-0fea204fa256)
 
 
 
