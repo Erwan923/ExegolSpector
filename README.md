@@ -128,7 +128,7 @@ Après chaque scan, ExegolSpector effectue deux actions principales :
 
 ## Implémentation AI 
 
-1. fine tunning du modele Mistral 7b pour des rapport de pentsest automatquement généré.
+1. Open interpreter
  
 ## Licence
 
