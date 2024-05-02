@@ -1,6 +1,7 @@
-<div style="text-align:center;">
-    <img src="https://github.com/Erwan923/ExegolSpector/assets/82095453/ac1a08ff-5cb0-443f-9c78-0fea204fa256" alt="Logo du projet" style="width: 200px; height: auto;">
-</div>
+<p align="center">
+  <img src="https://github.com/Erwan923/ExegolSpector/assets/82095453/ac1a08ff-5cb0-443f-9c78-0fea204fa256" alt="Logo du projet" width="500" align="center">
+</p>
+
 
 
 
